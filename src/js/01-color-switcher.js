@@ -10,7 +10,6 @@ let intervalId;
 startButton.addEventListener('click', () => {
   startButton.disabled = true;
   stopButton.disabled = false;
-
   intervalId = setInterval(() => {
     const randomColor = getRandomHexColor();
     body.style.backgroundColor = randomColor;
@@ -20,7 +19,6 @@ startButton.addEventListener('click', () => {
 stopButton.addEventListener('click', () => {
   startButton.disabled = false;
   stopButton.disabled = true;
-
   clearInterval(intervalId);
 });
 

@@ -26,7 +26,6 @@ const daysElement = timer.querySelector("[data-days]");
 const hoursElement = timer.querySelector("[data-hours]");
 const minutesElement = timer.querySelector("[data-minutes]");
 const secondsElement = timer.querySelector("[data-seconds]");
-
 let countdownInterval;
 
 function updateTimer(endTime) {
