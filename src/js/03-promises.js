@@ -20,10 +20,10 @@ document.querySelector('.form').addEventListener('submit', function (e) {
 
     promise
       .then(({ position, delay }) => {
-        console.log(`✅ Fulfilled promise ${position} через ${delay} ms`);
+        console.log(`✅ Fulfilled promise ${position} in ${delay} ms`);
       })
       .catch(({ position, delay }) => {
-        console.log(`❌ Rejected promise ${position} через ${delay} ms`);
+        console.log(`❌ Rejected promise ${position} in ${delay} ms`);
       });
 
     promises.push(promise);
