@@ -34,7 +34,7 @@ function updateTimer(endTime) {
     const timeRemaining = endTime - currentTime;
     if (timeRemaining <= 0) {
       clearInterval(countdownInterval);
-      updateDisplay(0);
+      updateDisplay(0, 0, 0, 0);
     } else {
       const { days, hours, minutes, seconds } = convertMs(timeRemaining);
       updateDisplay(days, hours, minutes, seconds);
